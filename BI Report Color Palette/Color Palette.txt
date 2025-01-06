@@ -1,0 +1,17 @@
+﻿Color Palette for Power BI Report
+________________
+
+
+Orange Theme
+* Normal  :  #FF9981
+* Light      :  #FFB9A9
+* Dark       :  #EC542F
+Purple Theme
+* Normal  :  #9697FF
+* Light      :  #B9BAFB
+* Dark       :  #4849CA
+Gray Theme
+* Normal  :  #474759
+* Dark      :  #3D3D51
+* Shade   :  #666666
+________________
