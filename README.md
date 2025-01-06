@@ -8,13 +8,13 @@ This repository contains a comprehensive project that automates the financial da
 ### **Dashboard Previews**  
 
 #### Dashboard 1:  
-![Dashboard 1](Images_Readme\1.jpg) 
+![Dashboard 1](Images_Readme/1.jpg)   
 
 #### Dashboard 2:  
-![Dashboard 2](Images_Readme\2.jpg)  
+![Dashboard 2](Images_Readme/2.jpg)   
 
 #### Dashboard 3:  
-![Dashboard 3](Images_Readme\3.jpg)  
+![Dashboard 3](Images_Readme/3.jpg) 
 
 
 ---
