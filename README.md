@@ -1,32 +1,47 @@
 # Regal Finance Solutions: End-to-End Financial Data Automation  
 
-This repository contains a comprehensive project that automates the financial data workflow for Regal Finance Solutions. It demonstrates the integration of multiple technologies to streamline data collection, processing, analysis, and deployment, ensuring accuracy, efficiency, and scalability.  
+This repository contains a comprehensive project that automates the financial data workflow for Regal Finance Solutions. It demonstrates the integration of multiple technologies to streamline data collection, processing, analysis, and deployment, ensuring accuracy, efficiency, and scalability. This repository addresses complex, real-world business scenarios by implementing advanced solutions leveraging DAX for data modeling, M Language for ETL transformations, and machine learning for predictive analytics and automation.
+ 
 ---
 
 ## **Dashboards**  
 
 ### **Dashboard Previews**  
 
-#### Dashboard 1:  
+#### Dashboard Visual 1:  
 ![Dashboard 1](Images_Readme/1.jpg)   
 
-#### Dashboard 2:  
+#### Dashboard Visual 2:  
 ![Dashboard 2](Images_Readme/2.jpg)   
 
-#### Dashboard 3:  
+#### Dashboard Visual 3:  
 ![Dashboard 3](Images_Readme/3.jpg) 
+
+
+---
+
+## **Time Series Forecasting API**  
+
+### **Application Screenshot**  
+
+#### Input the Data
+![ML Model Application](Images_Readme/four.JPG)  
+
+#### Output Results
+![ML Model Application](Images_Readme/five.JPG) 
 
 
 ---
 
 ## **Key Features**  
 
-1. **Outlook Email Automation**: Automated retrieval of financial data files via Microsoft Workflow, ensuring timely and error-free downloads.  
-2. **Google Cloud Platform (GCP) Integration**: Cloud-based storage and processing of data files using GCP for scalability and reliability.  
-3. **Python Data Transformation**: Preprocessing, cleaning, and merging datasets to create consolidated inputs for analysis.  
-4. **Power BI Dashboard**: Advanced DAX-based transformations and interactive visualizations for actionable insights.  
-5. **Machine Learning Model Deployment**: Training and deploying ML models using Flask to predict trends and provide forecasts.  
-6. **Containerization with Docker**: Fully Dockerized application for seamless deployment and cross-environment compatibility.  
+1. **Outlook Email Automation**: Automated retrieval of financial data files via Microsoft Workflow, ensuring timely and error-free downloads.
+2. **Google Drive**: Automated workflow stores Excel sheets in Google Drive, ensuring organized and secure data storage. 
+3. **Google Cloud Platform (GCP) Integration**: Leveraged Google Cloud Platform (GCP) API to seamlessly connect Google Drive with Power BI for efficient data import and analysis.    
+4. **Python Data Transformation**: Preprocessing, cleaning, and merging datasets to create consolidated inputs for analysis.  
+5. **Power BI Dashboard**: Advanced DAX-based transformations and interactive visualizations for actionable insights.  
+6. **Machine Learning Model Deployment**: Training and deploying ML models using Flask to predict trends and provide forecasts.  
+7. **Containerization with Docker**: Fully Dockerized application for seamless deployment and cross-environment compatibility.  
 
 ---
 
@@ -43,11 +58,14 @@ This repository contains a comprehensive project that automates the financial da
 ## **Technologies Used**  
 
 - **Microsoft Workflow**: Automates Outlook email operations.  
-- **Google Cloud Platform**: For data storage and processing.  
+- **Google Cloud Platform (GCP)**: For data storage, processing, and API integration.  
+- **Google Drive**: Secure storage for Excel files, automated through workflows.  
 - **Python**: Data preprocessing, cleaning, and backend integration.  
-- **Power BI**: Advanced visual analytics and dashboards.  
+- **Power BI**: Visual analytics and dashboard creation.  
+- **Figma**: Designed visually appealing and intuitive dashboard prototypes.  
 - **Flask**: Web framework for ML model deployment.  
-- **Docker**: Containerization for application deployment.  
+- **Docker**: Containerization for scalable deployment.  
+  
 
 ---
 
