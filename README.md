@@ -127,4 +127,4 @@ This repository addresses key business challenges and provides insights based on
 ### **Setup**  
 1. Clone this repository:  
    ```bash  
-   git clone https://github.com/your-repo-name.git  
+   git clone [https://github.com/AyushAI/RegalCloud-AI-Solutions-Financial-Workflow-Automation-from-Outlook-to-Dockerized-ML.git]
