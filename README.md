@@ -33,6 +33,44 @@ This repository contains a comprehensive project that automates the financial da
 
 ---
 
+# Real-World Business Challenges Tackled in This Repository
+
+This repository addresses key business challenges and provides insights based on real-world data. Below are the primary questions explored and analyzed in this project:
+
+## Key Business Questions
+
+1. **Key Metrics Overview**
+   - What are the averages for annual income, monthly balance, payment delays, and credit utilization?
+
+2. **Payment Behavior Analysis**
+   - How does payment behavior vary across credit mix categories?
+
+3. **Customer Age Distribution**
+   - What is the age distribution of customers?
+
+4. **Credit Scores by Age Group**
+   - How are credit scores distributed among these age groups?
+
+5. **Payment Behaviors by Credit Mix**
+   - What is the frequency of payment behaviors across credit mix categories?
+
+6. **Loan Approach Targeting**
+   - Which age groups are ideal for loan approaches?
+
+7. **In-Depth Age Group Analysis**
+   - Which age groups have an average inquiry count > 7.5?
+
+8. **LTV Score Calculation and Promotions**
+   - How are LTV scores calculated?
+
+9. **Loans and Credit Cards by Age**
+   - What are the average loans and credit cards held by each age group?
+
+10. **Loan Disbursement by Type**
+    - What is the distribution of loan types disbursed?
+
+---
+
 ## **Key Features**  
 
 1. **Outlook Email Automation**: Automated retrieval of financial data files via Microsoft Workflow, ensuring timely and error-free downloads.
