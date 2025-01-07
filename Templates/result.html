@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result - Time Series Forecasting API</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #474759;
+            margin: 0;
+            padding: 0;
+            color: #B9BAFB;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #5D5D7A;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #3D3D51;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .result {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #6E6E8E;
+        }
+        .likely {
+            color: #FF9981;
+        }
+        .unlikely {
+            color: #9697FF;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4849CA;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #3D3D51;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result">
+            <p>The customer is <span class="{{ prediction }}">
+                {{ prediction }}
+            </span> to leave the service.</p>
+        </div>
+        <a href="/" class="btn">Make Another Prediction</a>
+    </div>
+</body>
+</html>

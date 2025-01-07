@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Series Forecasting API</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #474759;
+            margin: 0;
+            padding: 0;
+            color: #B9BAFB;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #5D5D7A;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #3D3D51;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: grid;
+            gap: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: #FFB9A9;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="number"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #9697FF;
+            border-radius: 4px;
+            background-color: #6E6E8E;
+            color: #FFB9A9;
+            font-size: 16px;
+        }
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #B9BAFB;
+            box-shadow: 0 0 0 2px rgba(185, 186, 251, 0.2);
+        }
+        input[type="submit"] {
+            background-color: #4849CA;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #3D3D51;
+        }
+        .form-group {
+            display: grid;
+            gap: 10px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+        .radio-option {
+            display: flex;
+            align-items: center;
+        }
+        .radio-option input[type="radio"] {
+            margin-right: 5px;
+        }
+        @media (min-width: 768px) {
+            .form-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Time Series Forecasting API!</h1>
+        <form action="/result" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="creditScore">Credit Score:</label>
+                    <input type="number" id="creditScore" name="creditScore" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="tenure">Tenure:</label>
+                    <input type="number" id="tenure" name="tenure" required>
+                </div>
+                <div class="form-group">
+                    <label for="estimatedSalary">Estimated Salary:</label>
+                    <input type="number" id="estimatedSalary" name="estimatedSalary" step="0.01" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Has Credit Card:</label>
+                    <div class="radio-group">
+                        <label class="radio-option"><input type="radio" name="hasCrCard" value="0" required> No</label>
+                        <label class="radio-option"><input type="radio" name="hasCrCard" value="1"> Yes</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Is Active Member:</label>
+                    <div class="radio-group">
+                        <label class="radio-option"><input type="radio" name="isActiveMember" value="0" required> No</label>
+                        <label class="radio-option"><input type="radio" name="isActiveMember" value="1"> Yes</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Geography:</label>
+                    <div class="radio-group">
+                        <label class="radio-option"><input type="radio" name="geography" value="1" required> France</label>
+                        <label class="radio-option"><input type="radio" name="geography" value="2"> Germany</label>
+                        <label class="radio-option"><input type="radio" name="geography" value="3"> Spain</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <label class="radio-option"><input type="radio" name="gender" value="0" required> Female</label>
+                        <label class="radio-option"><input type="radio" name="gender" value="1"> Male</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Total Products:</label>
+                    <div class="radio-group">
+                        <label class="radio-option"><input type="radio" name="totalProducts" value="1" required> One product</label>
+                        <label class="radio-option"><input type="radio" name="totalProducts" value="2"> Two Products</label>
+                        <label class="radio-option"><input type="radio" name="totalProducts" value="3"> More Than 2 Products</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Account Balance:</label>
+                    <div class="radio-group">
+                        <label class="radio-option"><input type="radio" name="accountBalance" value="0" required> Zero Balance</label>
+                        <label class="radio-option"><input type="radio" name="accountBalance" value="1"> More Than Zero Balance</label>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
