@@ -4,6 +4,11 @@ This repository contains a comprehensive project that automates the financial da
  
 ---
 
+### **Featured Case Study**  
+Read the detailed case study on Regal Finance Solutions :  [End-to-End Automation : Transforming Financial Data Analysis with Cloud and AI](https://medium.com/@ayush.developer10/nextera-supplies-analytical-case-study-a07776b25ced)  
+
+---
+
 ## **Dashboards**  
 
 ### **Dashboard Previews**  
