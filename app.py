@@ -9,6 +9,22 @@ with open(MODEL_PATH, "rb") as f:
 # Initialize Flask app
 app = Flask(__name__)
 
+# Preprocess function
+def preprocess_function(input_data):
+    """
+    Preprocesses the input data from the form.
+    Converts a comma-separated string of numbers into a list of floats.
+    
+    :param input_data: str - Comma-separated input from the form
+    :return: list - List of floats
+    """
+    try:
+        # Split the input by commas, strip whitespace, and convert to floats
+        processed_data = [float(value.strip()) for value in input_data.split(',')]
+        return processed_data
+    except ValueError as e:
+        raise ValueError(f"Invalid input format: {e}. Please enter numerical values separated by commas.")
+
 # Define routes
 @app.route('/')
 def home():
@@ -19,12 +35,12 @@ def predict():
     # Retrieve form data
     input_data = request.form.get('input_data')  # Adjust 'input_data' based on your form field names
     
-    # Convert input data to the format expected by the model (e.g., as a NumPy array or DataFrame)
-    # Example: parsed_data = preprocess_function(input_data)  # Replace with actual preprocessing
-    
-    # Make prediction
     try:
-        prediction = model.predict([[float(input_data)]])[0]  # Update based on input format
+        # Preprocess input data
+        parsed_data = preprocess_function(input_data)
+        
+        # Make prediction
+        prediction = model.predict([parsed_data])[0]  # Assuming the model takes a single feature vector
         prediction_text = "likely" if prediction == 1 else "unlikely"
     except Exception as e:
         prediction_text = f"Error: {e}"
